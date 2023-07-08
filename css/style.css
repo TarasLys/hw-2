@@ -347,5 +347,76 @@ display: inline-flex;
             align-items: center;
 }
  
+/* ---------------------------------------block three------------------------------------------------------------- */
 
 
+.block-three {
+    padding: 100px 0;
+
+   
+}
+
+.div-text-three {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+ 
+.main-title-three {
+    display: block;
+    color: var(--black, #2C2C2C);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+}
+
+.menu-text {
+    display: block;
+    color: var(--black, #2C2C2C);
+        text-align: center;
+        font-family: Roboto;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+}
+
+.circle-parent {
+    position: relative;
+
+
+    
+}
+
+.picture-absolute {
+    position: absolute;
+    top: 40px;
+        right: 40px;
+    /* top: 40px;
+    right: 890px; */
+}
+
+
+
+
+.picture-wrap {
+    display: flex;
+    flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        column-gap: 32px;
+        row-gap: 32px;
+}
+
+.picture-formula {
+    display: block;
+        flex-basis: calc((100% - 64px) / 3);
+}
+
+.div-picture-three {
+    margin-top: 40px;
+}
