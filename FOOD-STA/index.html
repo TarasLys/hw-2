@@ -5,67 +5,168 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Food sta</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <a href=""
-        ><img src="./images/Vector.svg" alt="logo" width="66" height="52" />
-      </a>
+      <div class="container header-container indent">
+        <a class="logo" href=""
+          ><img src="./images/Vector.svg" alt="logo" width="66" height="52" />
+        </a>
 
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Service</a></li>
-          <li><a href="">Menu</a></li>
-          <li><a href="">Contact</a></li>
-        </ul>
-      </nav>
-      <button type:button="">Order Now</button>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="">Home</a></li>
+            <li><a class="nav-link" href="">About</a></li>
+            <li><a class="nav-link" href="">Service</a></li>
+            <li><a class="nav-link" href="">Menu</a></li>
+            <li><a class="nav-link" href="">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="header-button" type="button">Order Now</button>
+      </div>
     </header>
 
     <main>
-      <section>
-        <h1>Enjoy Your Favorite Food From Anywhere</h1>
-        <p>
-          With just a few clicks, you can have your favorite meals delivered
-          straight to your doorstep, no matter where you are. Order now and
-          enjoy a hassle-free and delicious meal from the comfort of your own
-          home.
-        </p>
-        <button type="button">Order Now</button>
-        <img src="./images/Foto 1.png" alt="" height="528" width="528" />
+      <section class="container indent">
+        <div class="block-one">
+          <div class="div-text-one">
+            <h1 class="main-title">Enjoy Your Favorite Food From Anywhere</h1>
+            <p class="text-one">
+              With just a few clicks, you can have your favorite meals delivered
+              straight to your doorstep, no matter where you are. Order now and
+              enjoy a hassle-free and delicious meal from the comfort of your
+              own home.
+            </p>
+            <button class="button-one" type="button">Order Now</button>
+          </div>
+
+          <div class="div-picture-one">
+            <img
+              class="picture-one"
+              src="./images/Foto 1.png"
+              alt=""
+              height="528"
+              width="528"
+            />
+          </div>
+        </div>
       </section>
 
-      <section>
-        <img src="./images/aple-min.png" alt="apple" width="396" height="502" />
-        <h2>What’s Special About Our Offerings</h2>
-        <p>
-          With our platform, you can browse through a diverse selection of
-          cuisines and local restaurants, and choose from a variety of dishes
-          that cater to your specific taste buds.
-        </p>
-        <ul>
-          <li>
-            <h3>Fasest Delivery</h3>
-            <p>
-              Our advanced logistics system and dedicated delivery partners
-              ensure that your meals are delivered to you within 30-minutes.
-            </p>
-          </li>
-          <li>
-            <h3>Easy To Order</h3>
-            <p>
-              You can browse through a wide variety of cuisines and restaurants,
-              select your favorite meals, and place your order in just a few
-              clicks.
-            </p>
-          </li>
-        </ul>
-        <button type="button">Order Now</button>
+      <section class="container">
+        <div class="block-two">
+          <div class="div-picture-two">
+            <img
+              class="picture-one"
+              src="./images/Ellipse 1.jpg"
+              alt="apple"
+              width="540"
+              height="540"
+            />
+            <div class="apple-three">
+              <img
+                class="picture-three"
+                src="./images/shadow.png"
+                alt="apple"
+                width="252"
+                height="87"
+              />
+            </div>
+            <div class="apple-two">
+              <img
+                class="picture-two"
+                src="./images/aple-min.png"
+                alt="apple"
+                width="396"
+                height="502"
+              />
+            </div>
+          </div>
+
+          <!-- ----------------------------------text block -->
+          <div class="common-text-two">
+            <div class="div-text-two">
+              <h2 class="main-title-two">What’s Special About Our Offerings</h2>
+              <p class="text-two">
+                With our platform, you can browse through a diverse selection of
+                cuisines and local restaurants, and choose from a variety of
+                dishes that cater to your specific taste buds.
+              </p>
+            </div>
+            <div class="butter-two">
+              <ul class="butter-lists-two">
+                <li class="butter-list">
+                  <div class="div-circle">
+                    <img
+                      class="icon-circle"
+                      src="./images/Ellipse-3.svg"
+                      alt="logo"
+                      width="48"
+                      height="48"
+                    />
+                    <div class="div-icon-two">
+                      <img
+                        class="icon-two"
+                        src="./images/rocket.svg"
+                        alt="logo"
+                        width="32"
+                        height="32"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="butter-title">Fasest Delivery</h3>
+
+                  <p class="butter-text">
+                    Our advanced logistics system and dedicated delivery
+                    partners ensure that your meals are delivered to you within
+                    30-minutes.
+                  </p>
+                </li>
+                <li class="butter-list">
+                  <div class="div-circle">
+                    <img
+                      class="icon-circle"
+                      src="./images/Ellipse-3.svg"
+                      alt="logo"
+                      width="48"
+                      height="48"
+                    />
+
+                    <div class="div-icon-two">
+                      <img
+                        class="icon-two"
+                        src="./images/touch_app.svg"
+                        alt="logo"
+                        width="32"
+                        height="32"
+                      />
+                    </div>
+                  </div>
+                  <h3 class="butter-title">Easy To Order</h3>
+                  <p class="butter-text">
+                    You can browse through a wide variety of cuisines and
+                    restaurants, select your favorite meals, and place your
+                    order in just a few clicks.
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <button class="butter-button" type="button">Order Now</button>
+          </div>
+        </div>
       </section>
 
-      <section>
+      <section class="container">
         <h2>Some of Our Favorites</h2>
         <p>Looking for something delicious?</p>
         <ul>
@@ -120,7 +221,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h2>What our Customers Say</h2>
         <p>
           Don't just take our word for it - see what our satisfied customers
@@ -150,7 +251,7 @@
         </ul>
       </section>
 
-      <section>
+      <section class="container">
         <h2>Subscribe To Get Special Offers</h2>
         <p>
           Order now and receive 10% off your first meal with Enjoy Your Favorite
@@ -166,32 +267,34 @@
       </section>
     </main>
     <footer>
-      <a href=""
-        ><img src="./images/Vector.svg" alt="logo" width="66" height="52"
-      /></a>
-      <nav>
-        <li><a href="">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Service</a></li>
-        <li><a href="">Menu</a></li>
-        <li><a href="">Contact</a></li>
-      </nav>
-      <p>Subscribe</p>
-      <form action="">
-        <input type="Enter your email" /><button type="button">
-          Subscribe
-        </button>
-      </form>
-      <p>
-        By subscribing you agree to with our
-        <span><a href="">Privacy Policy</a></span>
-      </p>
-      <ul>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Terms of Service</a></li>
-        <li><a href="">Cookies Settings</a></li>
-      </ul>
-      <p>2022 FoodSta. All right reserved.</p>
+      <div class="container">
+        <a href=""
+          ><img src="./images/Vector.svg" alt="logo" width="66" height="52"
+        /></a>
+        <nav>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Service</a></li>
+          <li><a href="">Menu</a></li>
+          <li><a href="">Contact</a></li>
+        </nav>
+        <p>Subscribe</p>
+        <form action="">
+          <input type="Enter your email" /><button type="button">
+            Subscribe
+          </button>
+        </form>
+        <p>
+          By subscribing you agree to with our
+          <span><a href="">Privacy Policy</a></span>
+        </p>
+        <ul>
+          <li><a href="">Privacy Policy</a></li>
+          <li><a href="">Terms of Service</a></li>
+          <li><a href="">Cookies Settings</a></li>
+        </ul>
+        <p>2022 FoodSta. All right reserved.</p>
+      </div>
     </footer>
   </body>
 </html>
