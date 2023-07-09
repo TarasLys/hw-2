@@ -111,9 +111,29 @@ display: inline-flex;
 }
 
 .div-picture-one {
+    position: relative;
     display: block;
     /* background-color: #18f026; */
 }
+
+.picture-one-button {
+    width: 34px;
+    height: 28px;
+    position: absolute;
+    top: 260px;;
+    left:0;
+    
+}
+
+.picture-two-button {
+    width: 34px;
+        height: 28px;
+        position: absolute;
+        top: 260px;
+        
+        left: 503px;
+}
+
 
 .div-text-one {
     display: block;
@@ -636,6 +656,8 @@ display: inline-flex;
         border: 0.854px solid var(--yellow-main, #FFE550);
         background: var(--white, #FEFEFE);
 }
+
+
 
 .input-five::placeholder {
     color: var(--neutral-dark-gray, #505050);
