@@ -64,11 +64,14 @@ img {
     color: var(--primary-text-color)
 }
 .nav-link:hover {
-    color: var(--acent-text-color);
+    color: #BBF330;
+    /* color: var(--acent-text-color); */
     font-weight: 700;
     text-decoration: underline;
 
 }
+
+
 
 .header-button {
 border-radius: 30px;
@@ -167,6 +170,11 @@ display: inline-flex;
                 justify-content: center;
                 align-items: center;
                 border: none;
+}
+
+.button-one:hover,
+.button-one:focus {
+    background-color: var(--acent-btn-bg);
 }
 
 
@@ -350,6 +358,12 @@ display: inline-flex;
             padding: 10px 22px;
             justify-content: center;
             align-items: center;
+}
+
+.butter-button:hover,
+.butter-button:focus {
+    
+        background: #BBF330;
 }
  
 /* ---------------------------------------block three------------------------------------------------------------- */
@@ -623,6 +637,26 @@ display: inline-flex;
         background: var(--white, #FEFEFE);
 }
 
+.input-five::placeholder {
+    color: var(--neutral-dark-gray, #505050);
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    outline: transparent;
+        background-color: transparent;
+}
+
+.input-five:active, 
+.input-five:hover,
+.input-five:focus {
+
+
+    border: 0.854px solid var(--dark-green, #7EB101);
+
+}
+
 .button-five {
     display: block;
     width: 103px;
@@ -640,6 +674,14 @@ display: inline-flex;
         background: var(--button-green, #BBF330);
         border: none;
 }
+
+.button-five:hover,
+.button-five:focus {
+
+background: #FFE450;
+}
+
+
 
 .form-five {
     display: flex;
@@ -831,6 +873,32 @@ position: absolute;
             margin-right: 13px;
 }
 
+.input-subscribe::placeholder {
+    color: var(--neutral-dark-gray, #505050);
+        font-family: Roboto;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        outline: transparent;
+        background-color: transparent;
+}
+
+
+
+
+.input-subscribe:hover,
+.input-subscribe:focus {
+
+    
+        border: 0.854px solid var(--dark-green, #7EB101);
+       
+}
+
+
+
+
+
 .button-subscribe {
     width: 103px;
     height: 42px;
@@ -842,6 +910,14 @@ position: absolute;
             justify-content: center;
             align-items: center;
 }
+
+.button-subscribe:hover,
+.button-subscribe:focus {
+
+    background: #ffffff;
+    border: 2px solid #FFE450;
+}
+
 
 .link-subscribe {
     color: #2C2C2C;
