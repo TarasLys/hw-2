@@ -15,6 +15,18 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -33,7 +45,9 @@
             <li><a class="nav-link" href="">Contact</a></li>
           </ul>
         </nav>
-        <button class="header-button" type="button">Order Now</button>
+        <button class="header-button" data-first-modal-open type="button">
+          Order Now
+        </button>
       </div>
     </header>
 
@@ -48,20 +62,42 @@
               enjoy a hassle-free and delicious meal from the comfort of your
               own home.
             </p>
-            <button class="button-one" type="button">Order Now</button>
+            <button class="button-one" data-second-modal-open type="button">
+              Order Now
+            </button>
           </div>
-
           <div class="div-picture-one">
+            
+          <div class="autoplay">
             <!--  -->
-
-            <img
-              class="picture-one"
-              src="./images/Foto 1.png"
-              alt=""
-              height="528"
-              width="528"
-            />
+                        
+            <div class="slider__img">
+              <img
+                class="picture-one"
+                src="./images/slaider/pies.png"
+                alt=""
+               
+              />
+            </div>
+            <div class="slider__img">
+              <img
+                class="picture-one"
+                src="./images/slaider/pngwing.png"
+                alt=""
+               
+              />
+            </div>
+            <div class="slider__img">
+              <img
+                class="picture-one"
+                src="./images/slaider/chris-ralston.png"
+                alt=""
+                
+              />
+            </div>
+            <!-- </div> -->
           </div>
+        </div>
         </div>
       </section>
 
@@ -70,7 +106,7 @@
           <div class="div-picture-two">
             <img
               class="picture-one"
-              src="./images/Ellipse 1.jpg"
+              src="./images/Ellipse 1.svg"
               alt="apple"
               width="540"
               height="540"
@@ -163,7 +199,10 @@
                 </li>
               </ul>
             </div>
-            <button class="butter-button" type="button">Order Now</button>
+            <button class="butter-button" data-third-modal-open type="button">
+              Order Now
+            </button>
+            <a class="butter-link" href="">Read More ></a>
           </div>
         </div>
       </section>
@@ -466,5 +505,150 @@
         </div>
       </div>
     </footer>
+
+    <!-- ---------------------modal----------------------------------- -->
+    <div class="backdrop is-hidden" data-first-modal>
+      <div class="modal-one modal">
+        <button class="btn-close" data-first-modal-close>х</button>
+
+        <p class="form-p">Order Form</p>
+        
+
+        <form class="all-input">
+          <div class="name-input">
+            <label for="user-name" class="form-label"> Name </label>
+            <div class="div-input">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
+              />
+              
+            </div>
+          </div>
+          
+          <div class="name-input">
+            <label for="phone" class="form-label"> Phone </label>
+            <div class="div-input">
+              <input class="form-input" type="tel" name="phone" id="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"/>
+              
+            </div>
+          </div>
+          
+          <div class="name-input">
+            <label for="post" class="form-label"> Email </label>
+            <div class="div-input">
+              <input class="form-input" type="email" name="post" id="post" placeholder="example@gmail.com"/>
+              
+            </div>
+          </div>
+          
+
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+      <div class="backdrop is-hidden" data-second-modal>
+        <div class="modal-two modal">
+          <button class="btn-close" data-second-modal-close>х</button>
+        <p class="form-p">Order Form</p>
+        
+
+        <form class="all-input">
+          <div class="name-input">
+            <label for="user-name" class="form-label"> Name </label>
+            <div class="div-input">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
+              />
+              
+            </div>
+          </div>
+          
+          <div class="name-input">
+            <label for="phone" class="form-label"> Phone </label>
+            <div class="div-input">
+              <input class="form-input" type="tel" name="phone" id="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"/>
+              
+            </div>
+          </div>
+          
+          <div class="name-input">
+            <label for="post" class="form-label"> Email </label>
+            <div class="div-input">
+              <input class="form-input" type="email" name="post" id="post" placeholder="example@gmail.com"/>
+              
+            </div>
+          </div>
+          
+
+          <button class="form-button" type="submit">Send</button>
+        </form>
+      </div>
+      </div>
+      <div class="backdrop is-hidden" data-third-modal>
+        <div class="modal-three modal">
+          <button class="btn-close" data-third-modal-close>х</button>
+        <p class="form-p">Order Form</p>
+        
+
+        <form class="all-input">
+          <div class="name-input">
+            <label for="user-name" class="form-label"> Name </label>
+            <div class="div-input">
+              <input
+                class="form-input"
+                type="text"
+                name="user-name"
+                id="user-name"
+                placeholder="Your name"
+              />
+              
+            </div>
+          </div>
+          
+          <div class="name-input">
+            <label for="phone" class="form-label"> Phone </label>
+            <div class="div-input">
+              <input class="form-input" type="tel" name="phone" id="phone" placeholder="+38(0_ _) _ _ _   _ _   _ _"/>
+              
+            </div>
+          </div>
+          
+          <div class="name-input">
+            <label for="post" class="form-label"> Email </label>
+            <div class="div-input">
+              <input class="form-input" type="email" name="post" id="post" placeholder="example@gmail.com"/>
+              
+            </div>
+          </div>
+          
+
+          <button class="form-button" type="submit">Send</button>
+        </form></div>
+      </div>
+    </div>
+    <!-- ---------------------modal----------------------------------- -->
+    <!-- ---------------------script----------------------------------- -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
