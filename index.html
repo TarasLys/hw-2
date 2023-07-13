@@ -11,9 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Inter&family=Kalam&family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    /> -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
     <link
       rel="stylesheet"
@@ -48,6 +55,19 @@
         <button class="header-button" data-first-modal-open type="button">
           Order Now
         </button>
+        <!-- -----------mobile window------------------- -->
+        <div class="menu-burger">
+        <button
+          data-mobile-open
+          class="mobile-button menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          type="button"
+        >
+          <img class="gg-menu" src="./images/gg_menu.png" alt="" width="28" height="28"/>
+        </button>
+      </div>
+        <!-- -----------mobile window------------------- -->
       </div>
     </header>
 
@@ -422,7 +442,7 @@
             </form>
           </div>
           <div class="div-picture-tive">
-            <img src="./images/banan.png" alt="" height="266" width="608" />
+            <img class="picture-tive" src="./images/banan.png" alt="" height="266" width="608" />
           </div>
         </div>
       </section>
@@ -432,20 +452,20 @@
         <div class="block-footer">
           <div class="div-two-footer">
             <div class="div-nav">
-              <a class="logo right" href=""
+              <a class="logo-footer right" href=""
                 ><img
                   src="./images/Vector.svg"
                   alt="logo"
                   width="66"
                   height="52"
               /></a>
-              <nav class="nav">
-                <ul class="nav-list">
-                  <li><a class="nav-link" href="">Home</a></li>
-                  <li><a class="nav-link" href="">About</a></li>
-                  <li><a class="nav-link" href="">Service</a></li>
-                  <li><a class="nav-link" href="">Menu</a></li>
-                  <li><a class="nav-link" href="">Contact</a></li>
+              <nav class="nav-footer">
+                <ul class="nav-list-footer">
+                  <li><a class="nav-link-footer" href="">Home</a></li>
+                  <li><a class="nav-link-footer" href="">About</a></li>
+                  <li><a class="nav-link-footer" href="">Service</a></li>
+                  <li><a class="nav-link-footer" href="">Menu</a></li>
+                  <li><a class="nav-link-footer" href="">Contact</a></li>
                 </ul>
               </nav>
             </div>
@@ -500,6 +520,15 @@
               />
               <img class="pic-two" src="./images/footer/pic-two.png" alt="" />
               <img class="pic-one" src="./images/footer/pic-one.png" alt="" />
+              <!-- ----------------mobile img---------------------------------- -->
+              <img class="img_one" src="./images/footer-mobile/img_one.png" alt="">
+              <img class="img_two" src="./images/footer-mobile/img_two.png" alt="">
+              <img class="img_three" src="./images/footer-mobile/img_three.png" alt="">
+              <img class="img_four" src="./images/footer-mobile/img_four.png" alt="">
+              <img class="img_five" src="./images/footer-mobile/img_five.png" alt="">
+              <img class="img_six" src="./images/footer-mobile/img_six.png" alt="">
+              <img class="img_seven" src="./images/footer-mobile/img_seven.png" alt="">
+              <img class="img_eight" src="./images/footer-mobile/img_eight.png" alt="">
             </div>
           </div>
         </div>
@@ -635,7 +664,40 @@
       </div>
     </div>
     <!-- ---------------------modal----------------------------------- -->
+    <!-- ---------------------mobile menu----------------------------------- -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+      <div class="modal-mobile form-modal-mobile">
+        <button class="button-close menu-toggle js-close-menu" type="button">
+          <img src="./images/img-mobile/close btn.png" alt="" width="24" height="24">
+        </button>
+        <form class="form-mobile">
+          <div class="div-summa-mobile">
+            <div class="div-menu-mobile">
+              <nav class="nav-mobile">
+                <ul class="nav-list-mobile">
+                  <li><a class="nav-link-mobile" href="">Home</a></li>
+                  <li><a class="nav-link-mobile" href="">About</a></li>
+                  <li><a class="nav-link-mobile" href="">Service</a></li>
+                  <li><a class="nav-link-mobile" href="">Menu</a></li>
+                  <li><a class="nav-link-mobile" href="">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+
+            
+            
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ---------------------mobile menu----------------------------------- -->
     <!-- ---------------------script----------------------------------- -->
+    <!-- <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script> -->
     <script
       type="text/javascript"
       src="//code.jquery.com/jquery-1.11.0.min.js"
@@ -650,5 +712,7 @@
     ></script>
     <script src="./js/slider.js"></script>
     <script src="./js/modal.js"></script>
+    
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
