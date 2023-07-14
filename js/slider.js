@@ -4,7 +4,7 @@ $('.autoplay').slick({
     slidesToScroll: 1,
     dotsClass: "my-dots",
     autoplay: true,
-    autoplaySpeed: 200000,
+    autoplaySpeed: 1500,
 });
 
 // $('.autoplay').slick({

@@ -131,7 +131,8 @@ img {
 .header-container {
     display: flex;
     align-items: center;
-    
+    width: 1280px;
+    padding: 10px 16px;
     
 
 }
@@ -190,7 +191,7 @@ img {
     font-weight: 500;
     line-height: 150%;
     border: none;
-    margin-right: -40px;
+    margin-right: 0px;
 
 }
 
@@ -304,7 +305,7 @@ img {
             width: 768px;
             margin: 0 auto;
             padding: 0px;
-            background-color: #9efdb5;
+            /* background-color: #9efdb5; */
         }
     
         .indent {
@@ -672,7 +673,7 @@ img {
         justify-content: center;
         position: relative;
         border-radius: 320px;
-        border: 10px solid rgba(255, 255, 255, 0.50);
+        border: 3px solid rgba(255, 255, 255, 0.50);
         margin-left: 20px;
         margin-right: 20px;
         margin-top: 70px;
@@ -683,9 +684,10 @@ img {
 
     .block-two .picture-one {
 
-        width: 255px;
-        height: 255px;
-        border: 0;
+    border: 10px solid #FFE550;
+        width: 275px;
+        height: 275px;
+        
         margin: 0;
 
 
@@ -706,14 +708,14 @@ img {
 
     .block-two .apple-two {
         position: absolute;
-        top: -40px;
-        left: 30px;
+        top: -30px;
+        left: 40px;
     }
 
     .block-two .apple-three {
         position: absolute;
-        top: 190px;
-        left: 60px;
+        top: 205px;
+        left: 70px;
     }
 
     .butter-lists-two {
@@ -812,6 +814,14 @@ img {
         line-height: 150%;
     }
 
+        .block-two .apple-middle {
+            display: none;
+        }
+    
+        .block-two .apple-little {
+            display: none;
+        }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 1280px) {
@@ -864,7 +874,21 @@ img {
     height: 326px;
     flex-shrink: 0;
 }
+.block-two .apple-middle {
+    display: flex;
+width: 166px;
+    height: 210px;
+    flex-shrink: 0;
+    margin-left: 75px;
+}
 
+.block-two .apple-little {
+    display: flex;
+width: 108px;
+    height: 136px;
+    flex-shrink: 0;
+    margin-left: 44px;
+}
 
 
 .block-two .picture-three {
@@ -873,6 +897,10 @@ img {
 }
 
 .block-two .apple-two {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    
     position: absolute;
     top: -40px;
     left: 50px;
@@ -1119,6 +1147,14 @@ img {
 .butter-button:focus {
 
     background: #BBF330;
+}
+
+.apple-middle {
+    display: none;
+}
+
+.apple-little {
+    display: none;
 }
 
 /* ---------------------------------------block three------------------------------------------------------------- */
@@ -2488,6 +2524,27 @@ img {
 }
 
 /* --------------------------three modal---------------------------------- */
+
+@media screen and (min-width: 320px) and (max-width: 460px) {
+        
+
+                            .backdrop .modal {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                min-height: 449px;
+                border-radius: 2%;
+                background-repeat: no-repeat;
+                background-position: center;
+                /* background-size: 400px; */
+                background-size: 100%;
+            }
+
+                
+}
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -2621,7 +2678,7 @@ input {
     border: 1px solid rgba(18, 18, 18, 0.12);
     background: #FFF;
     box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15) inset;
-    width: 394px;
+    width: 100%;
     height: 48px;
     flex-shrink: 0;
     padding: 14px;
@@ -2668,51 +2725,14 @@ input {
 
 
 
-/* @media screen and (min-width: 320px) and (max-width: 428px) {
-    .list.adress-mobile .addlink-mobile {
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 24px;
-        letter-spacing: 0.4px;
+
+@media screen and (min-width: 769px) and (max-width: 3000px) {
+
+    .mobile-button.menu-toggle.js-open-menu {
+        display: none;
     }
-
-    
-
-    .social-links-mobile {
-        display: flex;
-
-        gap: 16px;
-        flex-shrink: 0;
-        align-self: flex-end;
-        list-style-type: none;
-    }
-
-}
-*/
-@media screen and (min-width: 428px) and (max-width: 768px) {
-
-    /* .header-container .mobile-button {
-        position: relative;
-            display: block;
-            background-color: #fff;
-            width: 28px;
-            height: 28px;
-        }
-    .header-container .menu-container {
-            position: absolute;
-            top: 20px;
-            left: 300px;
         
-            width: 130px;
-            height: 255px;
-            background-color: #fff;
-            z-index: 999;
-    
-            transform: translateY(-100%);
-            transition: transform 250ms ease-in-out;
-        } */
-}
-
+    }
 .div-menu-mobile {
 
     display: flex;
@@ -2800,7 +2820,7 @@ input {
     position: relative;
     width: 28px;
     height: 28px;
-    margin-left: 186px;
+    /* margin-left: 186px; */
 }
 
  .menu-container {
