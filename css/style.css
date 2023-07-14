@@ -116,7 +116,7 @@ img {
                            .header-container .logo {
                     margin-right: 191px;
                     padding: 10px 0;
-                    background-color: #fb5454;
+                    /* background-color: #fb5454; */
                 }
 
            .menu-burger {
@@ -832,6 +832,8 @@ img {
             padding-right: 32px;
         }
 
+                
+
                           .block-two .common-text-two {
                     display: block;
                     margin-top: 0px;
@@ -1192,10 +1194,41 @@ img {
 
 
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    .container {
+            width: 768px;
+            margin: 0 auto;
+            padding: 0px;
+            /* background-color: #9efdb5; */
+        }
+    
+        .indent {
+            padding: 0 32px;
+        }
+    
+        .container .block-three {
+            padding: 100px 0;
+        }
 
 
+        .block-three .picture-formula {
+               display: block;
+               flex-basis: calc((100% - 32px) / 2);
+           }
 
-
+        .block-three  .picture-absolute {
+                    position: absolute;
+                    top: 35px;
+                    right: 35px;
+                    width: 268px;
+                    height: 268px;
+                    
+                }
+        .block-three .div-picture-three {
+               margin-top: 60px;
+           }
+}
 
 
 .block-three {
@@ -1280,14 +1313,6 @@ img {
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 60px;
-        /* padding-bottom: 60px; */
-
-
-
-
-
-
-
         background-image: url(../images/img-mobile/fon-sector-two.png);
         background-repeat: no-repeat;
         width: 320px;
@@ -1361,6 +1386,52 @@ img {
 
 }
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .container .block-four {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            background-image: url(../images/img-tablet/fon2-tablet.png);
+            background-repeat: no-repeat;
+            width: 768px;
+            height: 544px;
+            
+            padding: 60px 32px 0 32px;
+        }
+
+        .block-four  .box-four {
+             display: flex;
+             flex-direction: row;
+             flex-wrap: wrap;
+             /* align-items: center;
+        justify-content: center; */
+             gap: 32px;
+             margin-top: 0;
+         }
+    
+        .block-four .box-list {
+            display: block;
+            border-radius: 0px 30px 30px 30px;
+            background: var(--white, #FEFEFE);
+            width: 336px;
+            height: 244px;
+            flex-shrink: 0;
+            padding: 14px 14px 0 14px;
+    
+        }
+        .block-four .div-text-four {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    margin-bottom: -85px;
+}
+                .div-picture-four {
+                    margin-top: 0;
+        
+                }
+}
+
 .block-four {
     display: flex;
     flex-direction: column;
@@ -1410,11 +1481,8 @@ img {
 }
 
 .div-picture-four {
-    /* display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center; */
+   
+
 }
 
 .box-four {
@@ -1589,7 +1657,51 @@ img {
         height: 80px;
         margin: 0 auto;
     }
+}
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    .container {
+        width: 768px;
+        margin: 0 auto;
+        padding: 0px;
+        
+    }
+
+    .indent {
+        padding: 0 32px;
+    }
+
+    .container .block-five {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 40px;
+        margin-top: 0px;
+        padding-left: 0;
+        width: 704px;
+        height: 360px;
+        flex-shrink: 0;
+        /* background-color: #f9d6d6; */
+    }
+
+           .block-five .div-picture-tive {
+            display: block;
+            width: 315px;
+                height: 136px;
+                margin-left: 400px;
+                margin-top: -690px;
+        }
+                .block-five .div-text-five {
+            display: block;
+            flex-direction: column;
+            margin-top: 55px;
+
+            /* width: 704px; */
+            /* background-color: #a0ff24; */
+        }
 }
 
 
@@ -1606,10 +1718,6 @@ img {
     width: 1280px;
     height: 395px;
     flex-shrink: 0;
-
-
-
-
 }
 
 .div-text-five {
@@ -1957,7 +2065,139 @@ img {
 }
 
 
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .container {
+            width: 768px;
+            margin: 0 auto;
+            padding: 0px;
+            /* background-color: #9efdb5; */
+        }
+    
+        .indent {
+            padding: 0 32px;
+        }
+    
+        .container .block-footer {
+    
+    
+            position: relative;
+            width: 704px;
+            height: 506px;
+            padding-top: 100px;
+            /* background-color: #fff3f3;       */
+        }
 
+                 .block-footer .div-nav {
+              margin-top: 0px;
+              margin-right: 20px;
+              display: inline-flex;
+              align-items: center
+                  /* align-items: center; */
+    
+    
+          }
+    
+                 .block-footer .right {
+              margin-right: 114px;
+          }
+    
+                 .block-footer .div-subscribe {
+              margin-top: 40px;
+    
+          }
+
+                           .block-footer .div-two-footer {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+
+
+                                           .block-footer .div-footer-two {
+                            display: flex;
+                            margin-top: 100px;
+                        }
+
+                           .block-footer .conditions-ul {
+                    display: flex;
+                    
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                }
+                           .block-footer .year {
+                    display: flex;
+        
+                    margin-left: 236px;
+                }
+
+
+                .block-footer .button-subscribe {
+                            width: 103px;
+                            height: 42px;
+                            border-radius: 30px;
+                            border: 0.854px solid #7EB101;
+                            background: #FFF;
+                            display: inline-flex;
+                            padding: 11px 22px;
+                            justify-content: center;
+                            align-items: center;
+                            color: #2C2C2C;
+                                font-family: Roboto;
+                                font-size: 13px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 150%;
+                        }
+
+                                .block-footer .pic-eight {
+                    position: absolute;
+                    top: 444px;
+                    left: -47px;
+                }
+                                .block-footer .pic-four {
+                    position: absolute;
+                    top: 395px;
+                    left: 200px;
+                    z-index: 1;
+                }
+                                .block-footer .pic-five {
+                    position: absolute;
+                    top: 420px;
+                    left: 270px;
+                } 
+                                .block-footer .pic-six {
+                    position: absolute;
+                        transform: rotate(270deg);
+                        top: 130px;
+                        left: 543px;
+                        width: 289px;
+                            height: 96px;
+                }
+                                .block-footer .pic-three {
+                    position: absolute;
+                    top: 408px;
+                    left: 105px;
+                }
+                                .block-footer .pic-seven {
+                    position: absolute;
+                    transform: rotate(270deg);
+                    top: 85px;
+                    left: 455px;
+                    width: 365px;
+                        height: 203px;
+                }
+                                .block-footer .pic-two {
+                    position: absolute;
+                    top: 433px;
+                    left: 557px;
+                }
+                                .block-footer .pic-one {
+                    position: absolute;
+                    top: 350px;
+                    left: 460px;
+                }
+}
 
 
 .nav-list-footer {
